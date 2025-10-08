@@ -59,7 +59,7 @@ node* reverseKnodes(node* &head, int k)
     node* currptr = head;
     node* nextptr ;
 
-    int count = 0;
+    int count = 0; 
 
     while(currptr != NULL  &&  count< k)
     {

@@ -57,7 +57,6 @@ int lengthofLL(node* &head)
 
  node*  AppenKnodes(node* &head, int k)
  {
-
     node* newTail;
     node* newHead;
     node* Tailptr =head;
@@ -65,8 +64,6 @@ int lengthofLL(node* &head)
     int l = lengthofLL(head);
     int count =1;
     k =k%l;
-
-       
 
     while(Tailptr->next != NULL)
     {
@@ -83,13 +80,10 @@ int lengthofLL(node* &head)
         Tailptr = Tailptr ->next;
         count++;
     }
-
     newTail->next = NULL;
     Tailptr->next = head;
 
-
     return newHead;
-
  }
 
 

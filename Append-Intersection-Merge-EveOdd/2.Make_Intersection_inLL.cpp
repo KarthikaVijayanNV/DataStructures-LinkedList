@@ -48,6 +48,19 @@ void MakeIntersection(node* &head1 ,node* &head2 , int pos)
        temp1= temp1->next;
    }
 
+
+   /*  below code also works
+   int count = 1;
+    while(temp1->next != NULL && count != pos)
+    {
+        temp1 = temp1->next;
+        count++;
+    }
+
+    */
+
+
+
    node* temp2 = head2;
    while(temp2->next != NULL)
    {
